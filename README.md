@@ -1,0 +1,1 @@
+# Checkup-for-a-block-of-memory-containing-a-repeated-single-byte
