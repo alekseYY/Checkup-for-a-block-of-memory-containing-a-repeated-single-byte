@@ -56,7 +56,7 @@ bool mem_eq(const void *const p, const char c, const size_t len)
   if (!len) { return true; }
   auto const mem = static_cast<const char*>(p);
   if (*mem != c) { return false; }
-  return !memcmp(mem, mem+1, len-1);
+  return memcmp(mem, mem+1, len-1) == 0;
 }
 
 auto mem_eq_test()
